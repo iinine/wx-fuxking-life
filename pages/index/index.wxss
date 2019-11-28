@@ -24,17 +24,22 @@
 .main{
   background-color: #e5dfdf;
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.main text{
-  font-size: 28px;
-  color: #357376;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
   position: relative;
+}
+.main .text{
+  font-size: 60rpx;
+  color: #357376;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   padding: 0 30rpx;
 }
-.main text::after{
+.main .text::after{
   content: '';
   display: block;
   width: 20vw;
@@ -44,6 +49,15 @@
   bottom: -4vw;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.main .last{
+  position: absolute;
+  bottom: 200rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 26rpx;
+  color: #6ba8a9;
 }
 
 .foot{
