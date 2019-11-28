@@ -1,0 +1,56 @@
+/**index.wxss**/
+.head, .main, .foot{
+  width: 100%;
+  text-align: center;
+}
+.head{
+  background: #1d4d4f;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  height: 150rpx;
+  position: relative;
+}
+.head text{
+  position: absolute;
+  left: 12rpx;
+  bottom: 12rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+  opacity: .6;
+}
+
+
+.main{
+  background-color: #e5dfdf;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main text{
+  font-size: 28px;
+  color: #357376;
+  position: relative;
+  padding: 0 30rpx;
+}
+.main text::after{
+  content: '';
+  display: block;
+  width: 20vw;
+  height: 1vw;
+  background-color: #6ba8a9;
+  position: absolute;
+  bottom: -4vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.foot{
+  background-color: #e5dfdf;
+  height: 80rpx;
+}
+.foot text{
+  color: #6ba8a9;
+  font-size: 12px;
+}

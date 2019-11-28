@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="head">
+    <text>hei ! halo ...</text>
+  </view>
+  <view class="main" bind:tap="handleClick">
+    <text>{{theText}}</text>
+  </view>
+  <view class="foot">
+   <text>power by thisang</text>
+  </view>
+</view>
