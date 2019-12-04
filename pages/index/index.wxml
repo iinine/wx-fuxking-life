@@ -8,6 +8,6 @@
     <text class="last" wx:if="{{lastOne}}" catchtap="handleViewLast">上一条</text>
   </view>
   <view class="foot">
-   <text>power by thisang</text>
+   <text>powerd by thisang</text>
   </view>
 </view>
