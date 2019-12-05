@@ -5,6 +5,9 @@
   </view>
   <view class="main" bind:tap="handleClick">
     <text class="text">{{theText}}</text>
+  </view>
+  <view class="option">
+    <button open-type="share">发送给好友</button>
     <text class="last" wx:if="{{lastOne}}" catchtap="handleViewLast">上一条</text>
   </view>
   <view class="foot">

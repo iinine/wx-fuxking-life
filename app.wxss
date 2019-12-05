@@ -1,6 +1,7 @@
 /**app.wxss**/
 page{
   height: 100%;
+  background-color: #e5dfdf;
 }
 .container {
   height: 100%;

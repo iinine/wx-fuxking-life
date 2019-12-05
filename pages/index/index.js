@@ -6,14 +6,18 @@ Page({
     lastOne: null,
     dataArr: null,
   },
-  onLoad: function() {
+  onLoad: function(query) {
     this.setData({
       arr: data.arr
     })
-  },
-  onReady: function () {
+    let _text;
+    if(query.text) {
+      _text = query.text
+    } else {
+      _text = this.get1fk()
+    }
     this.setData({
-      theText: this.get1fk()
+      theText: _text
     })
   },
   onPullDownRefresh() {
@@ -23,10 +27,12 @@ Page({
     })
     wx.stopPullDownRefresh();
   },
+  // 分享页面
   onShareAppMessage() {
-    wx.showShareMenu({
-      withShareTicket: false
-    })
+    return{
+      "title": '哈哈哈，这个适合你',	
+      "path": `/pages/index/index?text=${this.data.theText}`,
+    }
   },
   handleClick() {
     this.setData({

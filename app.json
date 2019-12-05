@@ -4,7 +4,8 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#1d4d4f",
+    "navigationBarBackgroundColor": "#1d4d4f",
     "navigationBarTitleText": "the fuxking life",
     "navigationBarTextStyle": "white",
     "navigationStyle": "custom",

@@ -5,9 +5,6 @@
 }
 .head{
   background: #1d4d4f;
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
   height: 150rpx;
   position: relative;
 }
@@ -20,13 +17,8 @@
   opacity: .6;
 }
 
-
 .main{
-  background-color: #e5dfdf;
   flex: 1;
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
   position: relative;
 }
 .main .text{
@@ -35,7 +27,7 @@
   position: absolute;
   width: 100%;
   left: 50%;
-  top: 50%;
+  top: 30%;
   transform: translate(-50%, -50%);
   padding: 0 30rpx;
 }
@@ -51,9 +43,23 @@
   transform: translateX(-50%);
 }
 
-.main .last{
+.option{
+  margin-bottom: 40vw;
+  position: relative;
+}
+.option button{
+  width: 90vw;
+  background-color: transparent;
+  border: 1px solid #1d4d4f;
+  font-size: 16px;
+  color: #1d4d4f;
+  border-radius: 50px;
+  font-weight: 300;
+  padding: 10px 24px;
+}
+.option text{
   position: absolute;
-  bottom: 200rpx;
+  top: 200rpx;
   left: 50%;
   transform: translateX(-50%);
   font-size: 26rpx;
@@ -61,10 +67,11 @@
 }
 
 .foot{
-  background-color: #e5dfdf;
   height: 80rpx;
 }
 .foot text{
   color: #6ba8a9;
   font-size: 12px;
+  opacity: .4;
+  font-weight: 300;
 }
